@@ -69,22 +69,22 @@ export const SearchModal: React.FC<SearchModalProps> = ({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: -10 }}
           transition={{ duration: 0.2 }}
-          className="w-full max-w-2xl bg-[#121216] border border-[#2A2A34] rounded-sm shadow-2xl overflow-hidden"
+          className="w-full max-w-2xl bg-[#FFFFFF] border border-[#D0CDC5] rounded-sm shadow-2xl overflow-hidden"
         >
           {/* Input Header */}
-          <div className="relative flex items-center border-b border-[#22222A] px-4 py-3 bg-[#16161C]">
+          <div className="relative flex items-center border-b border-[#E0DDD6] px-4 py-3 bg-[#F5F3EF]">
             <Search className="w-5 h-5 text-[#8B1E24] shrink-0 mr-3" />
             <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search materials, industries, plants, news..."
-              className="w-full bg-transparent text-[#E8E6E1] placeholder-[#A09D96] text-sm focus:outline-none"
+              className="w-full bg-transparent text-[#1C1B19] placeholder-[#6B6860] text-sm focus:outline-none"
               autoFocus
             />
             <button
               onClick={onClose}
-              className="p-1 text-[#A09D96] hover:text-[#E8E6E1] rounded transition-colors"
+              className="p-1 text-[#6B6860] hover:text-[#1C1B19] rounded transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
@@ -104,13 +104,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                       onNavigate('segment-automotive');
                       onClose();
                     }}
-                    className="p-3 bg-[#181820] hover:bg-[#20202A] border border-[#262632] rounded-sm text-left flex items-center justify-between group transition-colors"
+                    className="p-3 bg-[#F0EEEA] hover:bg-[#1C1B19] border border-[#D9D6CF] rounded-sm text-left flex items-center justify-between group transition-colors"
                   >
                     <div className="flex items-center gap-2">
                       <Layers className="w-4 h-4 text-[#8B1E24]" />
-                      <span className="text-xs text-[#E8E6E1] font-medium">Automotive Interiors</span>
+                      <span className="text-xs text-[#1C1B19] font-medium">Automotive Interiors</span>
                     </div>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#A09D96] group-hover:text-white transition-colors" />
+                    <ArrowRight className="w-3.5 h-3.5 text-[#6B6860] group-hover:text-[#8B1E24] transition-colors" />
                   </button>
 
                   <button
@@ -118,13 +118,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                       onNavigate('plants');
                       onClose();
                     }}
-                    className="p-3 bg-[#181820] hover:bg-[#20202A] border border-[#262632] rounded-sm text-left flex items-center justify-between group transition-colors"
+                    className="p-3 bg-[#F0EEEA] hover:bg-[#1C1B19] border border-[#D9D6CF] rounded-sm text-left flex items-center justify-between group transition-colors"
                   >
                     <div className="flex items-center gap-2">
                       <Factory className="w-4 h-4 text-[#8B1E24]" />
-                      <span className="text-xs text-[#E8E6E1] font-medium">Manufacturing Plants</span>
+                      <span className="text-xs text-[#1C1B19] font-medium">Manufacturing Plants</span>
                     </div>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#A09D96] group-hover:text-white transition-colors" />
+                    <ArrowRight className="w-3.5 h-3.5 text-[#6B6860] group-hover:text-[#8B1E24] transition-colors" />
                   </button>
 
                   <button
@@ -132,13 +132,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                       onNavigate('sustainability');
                       onClose();
                     }}
-                    className="p-3 bg-[#181820] hover:bg-[#20202A] border border-[#262632] rounded-sm text-left flex items-center justify-between group transition-colors"
+                    className="p-3 bg-[#F0EEEA] hover:bg-[#1C1B19] border border-[#D9D6CF] rounded-sm text-left flex items-center justify-between group transition-colors"
                   >
                     <div className="flex items-center gap-2">
                       <Award className="w-4 h-4 text-[#8B1E24]" />
-                      <span className="text-xs text-[#E8E6E1] font-medium">Sustainability & ZLD</span>
+                      <span className="text-xs text-[#1C1B19] font-medium">Sustainability & ZLD</span>
                     </div>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#A09D96] group-hover:text-white transition-colors" />
+                    <ArrowRight className="w-3.5 h-3.5 text-[#6B6860] group-hover:text-[#8B1E24] transition-colors" />
                   </button>
 
                   <button
@@ -146,13 +146,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                       onNavigate('news');
                       onClose();
                     }}
-                    className="p-3 bg-[#181820] hover:bg-[#20202A] border border-[#262632] rounded-sm text-left flex items-center justify-between group transition-colors"
+                    className="p-3 bg-[#F0EEEA] hover:bg-[#1C1B19] border border-[#D9D6CF] rounded-sm text-left flex items-center justify-between group transition-colors"
                   >
                     <div className="flex items-center gap-2">
                       <Newspaper className="w-4 h-4 text-[#8B1E24]" />
-                      <span className="text-xs text-[#E8E6E1] font-medium">News & Media</span>
+                      <span className="text-xs text-[#1C1B19] font-medium">News & Media</span>
                     </div>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#A09D96] group-hover:text-white transition-colors" />
+                    <ArrowRight className="w-3.5 h-3.5 text-[#6B6860] group-hover:text-[#8B1E24] transition-colors" />
                   </button>
                 </div>
               </div>
@@ -161,7 +161,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
             {/* Results: Materials */}
             {filteredMaterials.length > 0 && (
               <div className="space-y-2">
-                <div className="text-[10px] uppercase tracking-[0.2em] text-[#A09D96] font-semibold">
+                <div className="text-[10px] uppercase tracking-[0.2em] text-[#6B6860] font-semibold">
                   Material Swatches ({filteredMaterials.length})
                 </div>
                 <div className="space-y-1.5">
@@ -172,28 +172,28 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                         if (onSelectMaterial) onSelectMaterial(mat.id);
                         onClose();
                       }}
-                      className="p-2.5 bg-[#16161C] hover:bg-[#1E1E26] border border-[#22222A] rounded-sm flex items-center justify-between cursor-pointer transition-colors group"
+                      className="p-2.5 bg-[#F5F3EF] hover:bg-[#1C1B19] border border-[#E0DDD6] rounded-sm flex items-center justify-between cursor-pointer transition-colors group"
                     >
                       <div className="flex items-center gap-3">
                         <img
                           src={mat.image}
                           alt={mat.name}
-                          className="w-10 h-10 object-cover rounded-sm border border-[#2C2C38]"
+                          className="w-10 h-10 object-cover rounded-sm border border-[#CCC9C1]"
                           referrerPolicy="no-referrer"
                         />
                         <div>
-                          <div className="text-xs font-semibold text-[#E8E6E1] flex items-center gap-2">
+                          <div className="text-xs font-semibold text-[#1C1B19] flex items-center gap-2">
                             <span>{mat.name}</span>
                             <span className="text-[9px] px-1.5 py-0.2 bg-[#8B1E24]/20 text-[#C43D44] border border-[#8B1E24]/40 font-mono">
                               {mat.code}
                             </span>
                           </div>
-                          <div className="text-[10px] text-[#A09D96]">
+                          <div className="text-[10px] text-[#6B6860]">
                             {mat.category} • {mat.finish}
                           </div>
                         </div>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-[#A09D96] group-hover:text-[#8B1E24] transition-colors" />
+                      <ArrowRight className="w-4 h-4 text-[#6B6860] group-hover:text-[#8B1E24] transition-colors" />
                     </div>
                   ))}
                 </div>
@@ -203,7 +203,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
             {/* Results: Market Segments */}
             {filteredSegments.length > 0 && (
               <div className="space-y-2">
-                <div className="text-[10px] uppercase tracking-[0.2em] text-[#A09D96] font-semibold">
+                <div className="text-[10px] uppercase tracking-[0.2em] text-[#6B6860] font-semibold">
                   Market Segments
                 </div>
                 <div className="space-y-1.5">
@@ -214,13 +214,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                         onNavigate(`segment-${seg.slug}` as PageId);
                         onClose();
                       }}
-                      className="p-2.5 bg-[#16161C] hover:bg-[#1E1E26] border border-[#22222A] rounded-sm flex items-center justify-between cursor-pointer transition-colors group"
+                      className="p-2.5 bg-[#F5F3EF] hover:bg-[#1C1B19] border border-[#E0DDD6] rounded-sm flex items-center justify-between cursor-pointer transition-colors group"
                     >
                       <div>
-                        <div className="text-xs font-semibold text-[#E8E6E1]">{seg.title}</div>
-                        <div className="text-[10px] text-[#A09D96] line-clamp-1">{seg.tagline}</div>
+                        <div className="text-xs font-semibold text-[#1C1B19]">{seg.title}</div>
+                        <div className="text-[10px] text-[#6B6860] line-clamp-1">{seg.tagline}</div>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-[#A09D96] group-hover:text-[#8B1E24] transition-colors" />
+                      <ArrowRight className="w-4 h-4 text-[#6B6860] group-hover:text-[#8B1E24] transition-colors" />
                     </div>
                   ))}
                 </div>
@@ -230,7 +230,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
             {/* Results: News */}
             {filteredNews.length > 0 && (
               <div className="space-y-2">
-                <div className="text-[10px] uppercase tracking-[0.2em] text-[#A09D96] font-semibold">
+                <div className="text-[10px] uppercase tracking-[0.2em] text-[#6B6860] font-semibold">
                   News & Press
                 </div>
                 <div className="space-y-1.5">
@@ -241,13 +241,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                         onNavigate('news');
                         onClose();
                       }}
-                      className="p-2.5 bg-[#16161C] hover:bg-[#1E1E26] border border-[#22222A] rounded-sm flex items-center justify-between cursor-pointer transition-colors group"
+                      className="p-2.5 bg-[#F5F3EF] hover:bg-[#1C1B19] border border-[#E0DDD6] rounded-sm flex items-center justify-between cursor-pointer transition-colors group"
                     >
                       <div>
-                        <div className="text-xs font-semibold text-[#E8E6E1]">{article.title}</div>
-                        <div className="text-[10px] text-[#A09D96]">{article.date} • {article.category}</div>
+                        <div className="text-xs font-semibold text-[#1C1B19]">{article.title}</div>
+                        <div className="text-[10px] text-[#6B6860]">{article.date} • {article.category}</div>
                       </div>
-                      <ArrowRight className="w-4 h-4 text-[#A09D96] group-hover:text-[#8B1E24] transition-colors" />
+                      <ArrowRight className="w-4 h-4 text-[#6B6860] group-hover:text-[#8B1E24] transition-colors" />
                     </div>
                   ))}
                 </div>
@@ -258,13 +258,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({
               filteredMaterials.length === 0 &&
               filteredSegments.length === 0 &&
               filteredNews.length === 0 && (
-                <div className="py-8 text-center text-xs text-[#716F68]">
+                <div className="py-8 text-center text-xs text-[#8A8780]">
                   No matching results found for "{query}". Try searching for "Automotive", "Nappa", "PU", or "Plant".
                 </div>
               )}
           </div>
 
-          <div className="p-3 bg-[#0E0E12] border-t border-[#1F1F28] text-[10px] text-[#A09D96] flex items-center justify-between">
+          <div className="p-3 bg-[#FFFFFF] border-t border-[#1C1B19] text-[10px] text-[#6B6860] flex items-center justify-between">
             <span>Mayur Uniquoters Material Search Engine</span>
             <span>ESC to close</span>
           </div>

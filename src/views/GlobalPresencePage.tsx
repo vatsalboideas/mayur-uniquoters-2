@@ -48,27 +48,27 @@ export const GlobalPresencePage: React.FC<GlobalPresencePageProps> = ({ onNaviga
   return (
     <div className="space-y-28 pt-28 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Header */}
-      <section className="space-y-6 border-b border-[#1C1C24] pb-12">
+      <section className="space-y-6 border-b border-[#E5E2DC] pb-12">
         <span className="text-[10px] uppercase font-mono tracking-[0.3em] text-[#8B1E24] bg-[#8B1E24]/20 border border-[#8B1E24]/40 px-3 py-1 rounded inline-block">
           GLOBAL FOOTPRINT & SUPPLY NETWORK
         </span>
 
-        <h1 className="font-serif text-4xl sm:text-6xl text-[#E8E6E1] font-light max-w-4xl leading-tight">
+        <h1 className="font-serif text-4xl sm:text-6xl text-[#1C1B19] font-light max-w-4xl leading-tight">
           Delivering Material Excellence to 20+ Nations
         </h1>
 
-        <p className="text-sm sm:text-base text-[#A09D96] max-w-2xl font-light leading-relaxed">
+        <p className="text-sm sm:text-base text-[#6B6860] max-w-2xl font-light leading-relaxed">
           Through strategic warehousing in North America, direct OEM integration, and international logistics partners, Mayur Uniquoters ensures seamlessly synchronized supply chains.
         </p>
       </section>
 
       {/* Interactive World Map Section */}
       <section className="space-y-8">
-        <div className="bg-[#0E0E12] border border-[#22222A] rounded-sm p-6 sm:p-10 space-y-8 shadow-2xl">
-          <div className="relative h-96 sm:h-[450px] w-full bg-[#12121A] rounded border border-[#22222E] overflow-hidden flex items-center justify-center p-4">
+        <div className="bg-[#FFFFFF] border border-[#E0DDD6] rounded-sm p-6 sm:p-10 space-y-8 shadow-2xl">
+          <div className="relative h-96 sm:h-[450px] w-full bg-[#F5F3EF] rounded border border-[#E0DDD6] overflow-hidden flex items-center justify-center p-4">
             {/* World Map Vector Graphic Background */}
             <svg
-              className="w-full h-full opacity-30 stroke-[#333342] fill-[#1C1C28]"
+              className="w-full h-full opacity-30 stroke-[#C5C2BA] fill-[#E5E2DC]"
               viewBox="0 0 1000 500"
             >
               {/* Simplified World Continents SVG Paths */}
@@ -88,7 +88,7 @@ export const GlobalPresencePage: React.FC<GlobalPresencePageProps> = ({ onNaviga
                 className={`absolute z-10 p-3 rounded-full flex items-center gap-2 border transition-all ${
                   selectedHub === loc.id
                     ? 'bg-[#8B1E24] text-white border-white/50 scale-125 shadow-xl ring-4 ring-[#8B1E24]/30'
-                    : 'bg-[#181822] text-[#A09D96] hover:bg-[#8B1E24] hover:text-white border-[#333344]'
+                    : 'bg-[#F0EEEA] text-[#6B6860] hover:bg-[#8B1E24] hover:text-white border-[#C5C2BA]'
                 }`}
                 style={{ top: loc.coords.y, left: loc.coords.x }}
               >
@@ -101,21 +101,21 @@ export const GlobalPresencePage: React.FC<GlobalPresencePageProps> = ({ onNaviga
           </div>
 
           {/* Selected Location Info Card */}
-          <div className="p-6 bg-[#14141C] border border-[#22222E] rounded flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="p-6 bg-[#F5F3EF] border border-[#E0DDD6] rounded flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div className="space-y-2">
               <span className="text-[10px] font-mono text-[#8B1E24] uppercase tracking-widest block">
                 {locations[selectedHub].region}
               </span>
-              <h3 className="font-serif text-2xl text-[#E8E6E1]">
+              <h3 className="font-serif text-2xl text-[#1C1B19]">
                 {locations[selectedHub].title}
               </h3>
-              <p className="text-xs text-[#A09D96] max-w-xl leading-relaxed">
+              <p className="text-xs text-[#6B6860] max-w-xl leading-relaxed">
                 {locations[selectedHub].desc}
               </p>
             </div>
 
-            <div className="space-y-1.5 text-xs text-[#E8E6E1] shrink-0 bg-[#0E0E12] p-4 rounded border border-[#22222A]">
-              <span className="text-[10px] text-[#A09D96] block uppercase font-mono mb-1">
+            <div className="space-y-1.5 text-xs text-[#1C1B19] shrink-0 bg-[#FFFFFF] p-4 rounded border border-[#E0DDD6]">
+              <span className="text-[10px] text-[#6B6860] block uppercase font-mono mb-1">
                 Regional Specs
               </span>
               {locations[selectedHub].specs.map((s, idx) => (

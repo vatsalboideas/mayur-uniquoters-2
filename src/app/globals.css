@@ -27,11 +27,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f0f12;
+  background: #F0EEEA;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2a2a30;
+  background: #D0CDC5;
   border-radius: 3px;
 }
 
@@ -41,7 +41,7 @@
 
 /* Subtle luxury material texture overlays */
 .leather-grain {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-image: radial-gradient(rgba(28, 27, 25, 0.04) 1px, transparent 0);
   background-size: 24px 24px;
 }
 

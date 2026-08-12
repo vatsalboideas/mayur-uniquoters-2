@@ -24,7 +24,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <MaterialModalProvider>
-      <div className="min-h-screen bg-[#0A0A0B] text-[#E8E6E1] font-sans flex flex-col justify-between selection:bg-[#8B1E24] selection:text-white">
+      <div className="min-h-screen bg-[#F7F5F2] text-[#1C1B19] font-sans flex flex-col justify-between selection:bg-[#8B1E24] selection:text-white">
         <Header activePage={activePage} onNavigate={navigate} />
 
         <main className="flex-grow">

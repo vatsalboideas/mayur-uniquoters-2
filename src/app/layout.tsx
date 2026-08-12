@@ -36,7 +36,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-[#0A0A0B] text-[#E8E6E1] antialiased selection:bg-[#8B1E24] selection:text-white overflow-x-hidden">
+      <body className="bg-[#F7F5F2] text-[#1C1B19] antialiased selection:bg-[#8B1E24] selection:text-white overflow-x-hidden">
         <AppShell>{children}</AppShell>
       </body>
     </html>

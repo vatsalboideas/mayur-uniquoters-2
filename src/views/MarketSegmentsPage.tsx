@@ -12,16 +12,16 @@ export const MarketSegmentsPage: React.FC<MarketSegmentsPageProps> = ({ onNaviga
   return (
     <div className="space-y-24 pt-28 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Header */}
-      <section className="space-y-6 border-b border-[#1C1C24] pb-12">
+      <section className="space-y-6 border-b border-[#E5E2DC] pb-12">
         <span className="text-[10px] uppercase font-mono tracking-[0.3em] text-[#8B1E24] bg-[#8B1E24]/20 border border-[#8B1E24]/40 px-3 py-1 rounded inline-block">
           INDUSTRIAL MARKET SEGMENTS
         </span>
 
-        <h1 className="font-serif text-4xl sm:text-6xl text-[#E8E6E1] font-light max-w-4xl leading-tight">
+        <h1 className="font-serif text-4xl sm:text-6xl text-[#1C1B19] font-light max-w-4xl leading-tight">
           Where Material Intelligence Transforms Experience
         </h1>
 
-        <p className="text-sm sm:text-base text-[#A09D96] max-w-2xl font-light leading-relaxed">
+        <p className="text-sm sm:text-base text-[#6B6860] max-w-2xl font-light leading-relaxed">
           From passenger cars to boutique hotel lounges, fashion footwear, and luxury handbags, our surface materials are engineered to meet the stringent demands of world-leading brands.
         </p>
       </section>
@@ -31,30 +31,26 @@ export const MarketSegmentsPage: React.FC<MarketSegmentsPageProps> = ({ onNaviga
         {MARKET_SEGMENTS.map((segment, idx) => (
           <div
             key={segment.id}
-            className="bg-[#0E0E12] border border-[#22222A] rounded-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-10 shadow-xl"
+            className="bg-[#FFFFFF] border border-[#E0DDD6] rounded-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-6 sm:p-10 shadow-xl"
           >
             <div className={`lg:col-span-6 ${idx % 2 === 1 ? 'lg:order-2' : ''} space-y-6`}>
-              <div className="text-[10px] uppercase font-mono tracking-widest text-[#8B1E24]">
-                SEGMENT 0{idx + 1} • {segment.slug.toUpperCase()}
-              </div>
-
-              <h2 className="font-serif text-3xl sm:text-4xl text-[#E8E6E1]">
+              <h2 className="font-serif text-3xl sm:text-4xl text-[#1C1B19]">
                 {segment.title}
               </h2>
 
-              <p className="text-xs sm:text-sm text-[#A09D96] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#6B6860] leading-relaxed">
                 {segment.description}
               </p>
 
               <div className="space-y-2 pt-2">
-                <span className="text-[10px] uppercase font-mono tracking-widest text-[#E8E6E1] block">
+                <span className="text-[10px] uppercase font-mono tracking-widest text-[#1C1B19] block">
                   Key Application Areas:
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {segment.applications.map((app, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-[#181822] border border-[#282836] text-xs text-[#A09D96] rounded"
+                      className="px-3 py-1 bg-[#F0EEEA] border border-[#D4D1C9] text-xs text-[#6B6860] rounded"
                     >
                       {app.name}
                     </span>
@@ -62,7 +58,7 @@ export const MarketSegmentsPage: React.FC<MarketSegmentsPageProps> = ({ onNaviga
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-[#1C1C24]">
+              <div className="pt-4 border-t border-[#E5E2DC]">
                 <button
                   onClick={() => onNavigate(`segment-${segment.slug}` as PageId)}
                   className="px-6 py-3 bg-[#8B1E24] hover:bg-[#9E232A] text-white text-xs uppercase tracking-[0.2em] font-semibold rounded transition-all inline-flex items-center gap-2 group"
@@ -73,7 +69,7 @@ export const MarketSegmentsPage: React.FC<MarketSegmentsPageProps> = ({ onNaviga
               </div>
             </div>
 
-            <div className={`lg:col-span-6 ${idx % 2 === 1 ? 'lg:order-1' : ''} relative h-80 sm:h-[380px] rounded overflow-hidden border border-[#2A2A38]`}>
+            <div className={`lg:col-span-6 ${idx % 2 === 1 ? 'lg:order-1' : ''} relative h-80 sm:h-[380px] rounded overflow-hidden border border-[#D0CDC5]`}>
               <img
                 src={segment.heroImage}
                 alt={segment.title}
