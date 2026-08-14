@@ -82,20 +82,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
       {/* 1. CINEMATIC HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
         {/* Background Carousel */}
-        <div className="absolute inset-0 z-0">
-          <AnimatePresence mode="wait">
+        <div className="absolute inset-0 z-0 bg-[#1C1B19]">
+          {HERO_SLIDES.map((slide, index) => (
             <motion.img
-              key={heroIndex}
-              src={HERO_SLIDES[heroIndex].src}
-              alt={HERO_SLIDES[heroIndex].alt}
-              initial={{ opacity: 0, scale: 1.06 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.1, ease: 'easeOut' }}
+              key={slide.src}
+              src={slide.src}
+              alt={slide.alt}
+              initial={false}
+              animate={{ opacity: index === heroIndex ? 1 : 0 }}
+              transition={{ duration: 0.4, ease: 'easeOut' }}
               className="absolute inset-0 w-full h-full object-cover"
             />
-          </AnimatePresence>
-          <div className="absolute inset-0 bg-gradient-to-b from-[#F7F5F2]/40 via-[#F7F5F2]/30 to-[#F7F5F2]/85" />
+          ))}
+          <div className="absolute inset-0 bg-black/10 pointer-events-none" />
           <div className="absolute inset-0 leather-grain opacity-25 pointer-events-none" />
         </div>
 
@@ -122,10 +121,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-[#1C1B19] font-normal tracking-tight leading-[1.05] max-w-5xl mx-auto"
+            className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white font-normal tracking-tight leading-[1.05] max-w-5xl mx-auto"
           >
             Material Intelligence. <br />
-            <span className="italics font-light text-[#8B1E24]">Crafted for the World.</span>
+            <span className="italics font-light text-white">Crafted for the World.</span>
           </motion.h1>
 
           {/* Subheading */}
@@ -133,7 +132,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-base sm:text-lg text-black max-w-2xl mx-auto font-sans leading-relaxed font-light"
+            className="text-base sm:text-lg text-white max-w-2xl mx-auto font-sans leading-relaxed font-light"
           >
             Engineering high-performance coated materials, technical leatherette, and flexible surface solutions for global automotive OEMs, architectural furnishing, footwear, and luxury fashion accessories.
           </motion.p>
